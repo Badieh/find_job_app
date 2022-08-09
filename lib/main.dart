@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:find_job/layout/find_jop_layout.dart';
+import 'package:find_job/modules/splash_screen.dart';
 import 'package:find_job/shared/components/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const FindJobScreen(),
+      home: const SplashScreen(),
     );
   }
 }

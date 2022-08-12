@@ -1,5 +1,5 @@
 import 'package:find_job/layout/find_jop_layout.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -8,19 +8,17 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      appBar: AppBar(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(
             height: 30,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
-            child: Image.asset('assets/images/welcome.png',),
+            child: SvgPicture.asset("assets/images/splash.svg",),
           ),
           SizedBox(
             height: 10,
@@ -121,7 +119,7 @@ class SplashScreen extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                  color:  Color(0xff1976D2), borderRadius: BorderRadius.circular(20)),
               child: Text(
                 "Start Exploring",
                 style: TextStyle(fontSize: 20, color: Colors.white),

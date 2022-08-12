@@ -12,6 +12,11 @@ class FindJobCubit extends Cubit<FindJobStates> {
 
   static FindJobCubit get(context) => BlocProvider.of(context);
 
+  List titles =[
+    Text('Hello Hafiz \nFind your Dream jobs!',style: TextStyle(fontSize: 20),),
+    Text('Favourites'),
+    Text('Message'),
+    Text('Personal')];
 
   List<BottomNavigationBarItem> BottomNavBarItems = [
     BottomNavigationBarItem(activeIcon: Icon(Icons.home),

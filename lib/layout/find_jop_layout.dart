@@ -15,6 +15,10 @@ class FindJobScreen extends StatelessWidget {
         builder: (context, state) {
           var cubit = FindJobCubit.get(context);
           return Scaffold(
+            // appBar: AppBar(
+            //
+            //     title: cubit.titles[cubit.currentIndex]
+            // ),
             body: cubit.screens[cubit.currentIndex],
             bottomNavigationBar: BottomNavigationBar(
               showUnselectedLabels: false,
@@ -22,7 +26,7 @@ class FindJobScreen extends StatelessWidget {
               items: cubit.BottomNavBarItems,
               type: BottomNavigationBarType.fixed,
               currentIndex: cubit.currentIndex,
-              onTap: (index){
+              onTap: (index) {
                 cubit.changeBottomNavBar(index);
               },
             ),

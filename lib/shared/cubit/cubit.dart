@@ -12,25 +12,33 @@ class FindJobCubit extends Cubit<FindJobStates> {
 
   static FindJobCubit get(context) => BlocProvider.of(context);
 
-  List titles =[
-    Text('Hello Hafiz \nFind your Dream jobs!',style: TextStyle(fontSize: 20),),
+  List titles = [
+    Text(
+      'Hello Hafiz \nFind your Dream jobs!',
+      style: TextStyle(fontSize: 20),
+    ),
     Text('Favourites'),
     Text('Message'),
-    Text('Personal')];
+    Text('Personal')
+  ];
 
   List<BottomNavigationBarItem> BottomNavBarItems = [
-    BottomNavigationBarItem(activeIcon: Icon(Icons.home),
-      icon: Icon(Icons.home_outlined),label: 'Home'
-    ),
-    BottomNavigationBarItem(activeIcon: Icon(Icons.favorite),
-      icon: Icon(Icons.favorite_border),label: 'Favourites'
-    ),
-    BottomNavigationBarItem(activeIcon: Icon(Icons.message),
-      icon: Icon(Icons.message_outlined),label: 'Messages'
-    ),
-    BottomNavigationBarItem(activeIcon: Icon(Icons.person),
-      icon: Icon(Icons.person_outline_outlined),label: 'Personal'
-    ),
+    BottomNavigationBarItem(
+        activeIcon: Icon(Icons.home),
+        icon: Icon(Icons.home_outlined),
+        label: 'Home'),
+    BottomNavigationBarItem(
+        activeIcon: Icon(Icons.favorite),
+        icon: Icon(Icons.favorite_border),
+        label: 'Favourites'),
+    BottomNavigationBarItem(
+        activeIcon: Icon(Icons.message),
+        icon: Icon(Icons.message_outlined),
+        label: 'Messages'),
+    BottomNavigationBarItem(
+        activeIcon: Icon(Icons.person),
+        icon: Icon(Icons.person_outline_outlined),
+        label: 'Personal'),
   ];
 
   List screens = [
@@ -44,11 +52,15 @@ class FindJobCubit extends Cubit<FindJobStates> {
     currentIndex = index;
     emit(FindJobChangeBottomNavSate());
   }
+
   List favourites = [];
-  addToFavourites(){
+  addToFavourites() {
+
     emit(FindJobAddtoFavState());
   }
-  removeFromFavourites(){
+
+  removeFromFavourites() {
+
     emit(FindJobRemoveFromFavState());
   }
 }

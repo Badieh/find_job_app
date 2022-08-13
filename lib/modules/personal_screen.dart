@@ -19,9 +19,9 @@ class PersonalScreen extends StatelessWidget {
                 Container(
                   height: 50,
                   child: Text(
-                    "Profile",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-                  ),
+                  "Profile",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                ),
                 ),
                 InkWell(
                   onTap: () {},

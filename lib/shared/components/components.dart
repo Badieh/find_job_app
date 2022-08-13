@@ -123,3 +123,82 @@ Widget buildJobItem({required FindJobCubit cubit, required context}) => InkWell(
         ]),
       ),
     );
+
+Widget buildMessageItem() => Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Row(
+        children: [
+          Container(
+            height: 60,
+            width: 60,
+            child: CircleAvatar(
+              child: Stack(
+                alignment: Alignment.bottomRight,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/Picture.png"),
+                            fit: BoxFit.cover)),
+                  ),
+                  Container(
+                    height: 20,
+                    width: 20,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20)),
+                  ),
+                  Container(
+                    height: 17,
+                    width: 17,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(20)),
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Expanded(
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          "Rois Maulana",
+                          style:
+                              TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                      Text(
+                        "17:50",
+                        style:
+                            TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          "We can talk now hafiz, i will ask you...",
+                          style:
+                              TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                      Image.asset("assets/images/Notif.png")
+                    ],
+                  )
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
+    );

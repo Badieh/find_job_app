@@ -44,4 +44,11 @@ class FindJobCubit extends Cubit<FindJobStates> {
     currentIndex = index;
     emit(FindJobChangeBottomNavSate());
   }
+  List favourites = [];
+  addToFavourites(){
+    emit(FindJobAddtoFavState());
+  }
+  removeFromFavourites(){
+    emit(FindJobRemoveFromFavState());
+  }
 }

@@ -13,7 +13,7 @@ class FavouriteScreen extends StatelessWidget {
     return BlocConsumer<FindJobCubit, FindJobStates>(
         listener: (context, state) {},
         builder: (context, state) {
-
+          var page_context = context;
           var cubit = FindJobCubit.get(context);
           return SafeArea(
             child: Scaffold(
@@ -24,16 +24,20 @@ class FavouriteScreen extends StatelessWidget {
                   children: [
                     Text(
                       "Favourites",
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
                     ),
-                    SizedBox(height: 15,),
+                    SizedBox(
+                      height: 15,
+                    ),
                     Container(
                       width: double.infinity,
-                      height: MediaQuery.of(context).size.height-200,
+                      height: MediaQuery.of(context).size.height - 200,
                       child: ConditionalBuilder(
                           condition: cubit.favourite == true,
                           builder: (context) => ListView.separated(
-                              itemBuilder: (context, index) => buildJobItem(cubit),
+                              itemBuilder: (context, index) =>
+                                  buildJobItem(cubit: cubit, context: page_context),
                               separatorBuilder: (context, index) => separator(),
                               itemCount: 1),
                           fallback: (context) => Container(

@@ -19,7 +19,13 @@ class MyApp extends StatelessWidget {
       title: 'Find Job App',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
-        appBarTheme: AppBarTheme(color: Colors.white,elevation: 0),
+        appBarTheme: AppBarTheme(
+            color: Colors.white,
+            elevation: 0,
+            titleTextStyle: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.w700, fontSize: 20),
+            centerTitle: true,
+            actionsIconTheme: IconThemeData(color: Colors.black, size: 25)),
         primarySwatch: Colors.blue,
       ),
       home: const SplashScreen(),

@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'job_description_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -179,7 +181,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+
+                      },
                       child: Text(
                         'See More',
                         style: TextStyle(
@@ -190,7 +194,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               Expanded(
-                child: buildJobItem(cubit),
+                child: buildJobItem(cubit: cubit, context: context),
               ),
             ],
           ),

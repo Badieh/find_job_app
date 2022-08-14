@@ -1,16 +1,14 @@
 # find_job
+A finding job Flutter application to search and apply for jobs similar to linkedin.
 
-A new Flutter project.
+## Flutter Version
+Flutter 3.0.4
 
-## Getting Started
+## Snapsots
+<img src="snapshots/spash.jpg" height="300em" > <img src="snapshots/Home.jpg" height="300em" > <img src="snapshots/jobdesc.jpg" height="300em" > <img src="snapshots/Message.jpg" height="300em" >
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## plugins used
+- [conditional_builder_null_safety](https://pub.dev/packages/conditional_builder_null_safety): ^0.0.6
+- [bloc](https://pub.dev/packages/bloc): ^8.0.3
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc): ^8.0.1
+-[flutter_svg](https://pub.dev/packages/flutter_svg): ^1.1.3

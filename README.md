@@ -11,4 +11,4 @@ Flutter 3.0.4
 - [conditional_builder_null_safety](https://pub.dev/packages/conditional_builder_null_safety): ^0.0.6
 - [bloc](https://pub.dev/packages/bloc): ^8.0.3
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc): ^8.0.1
--[flutter_svg](https://pub.dev/packages/flutter_svg): ^1.1.3
+- [flutter_svg](https://pub.dev/packages/flutter_svg): ^1.1.3
